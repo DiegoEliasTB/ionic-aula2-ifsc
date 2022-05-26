@@ -1,0 +1,7 @@
+{
+  "name": "aprovacao-escolar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
