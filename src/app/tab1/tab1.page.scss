@@ -1,0 +1,56 @@
+// .d-form {
+
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+
+//     text-align: center;
+//     padding: 0 20px;
+//     margin-top: 50px;
+
+//     background-color: rebeccapurple;
+// }
+
+// .d-input {
+//     width: 60%;
+//     border: solid 1px grey;
+//     border-radius: 8px;
+// }
+
+.d-label-desc {
+    margin-right: 10px;
+}
+
+.d-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.d-label-result {
+    display: block;
+    width: 100%;
+    font-size: 2.25rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.d-green {
+    color: white;
+    background-color: green;
+    border: solid green 2px;
+}
+
+.d-yellow {
+    color: white;
+    background-color: yellow;
+    border: solid yellow 2px;
+}
+
+.d-red {
+    color: white;
+    background-color: red;
+    border: solid red 2px;
+}

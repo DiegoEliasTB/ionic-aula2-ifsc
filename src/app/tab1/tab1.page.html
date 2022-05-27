@@ -9,9 +9,25 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="small">Verifica aprovação escolar</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card-header>
+    <ion-label [(class)]="cor">{{resultado}}</ion-label>
+  </ion-card-header>
+  
+  <ion-card-header>
+    <form class="d-form" [formGroup]="checkoutForm">
+      <div class="d-input-group">
+        <ion-label class="d-label-desc" >Nota: </ion-label>
+        <ion-input class="d-input" formControlName="nota" type="number"></ion-input>
+      </div>
+      <div class="d-input-group">
+        <ion-label class="d-label-desc">Frequência: </ion-label>
+        <ion-input class="d-input" formControlName="frequencia" type="number"></ion-input>
+      </div>
+      <ion-button (click)="calcularAprovacao()" expand="full">Calcular</ion-button>
+    </form>
+  </ion-card-header>
 </ion-content>
