@@ -1,17 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Jogo de adivinhação
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-label position="fixed">Adivinhe o número</ion-label>
+  <ion-input type="number" [(ngModel)]="numero"></ion-input>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-label position="fixed">Tentativas restantes: </ion-label>
+  <ion-label position="fixed">{{tentativas}}</ion-label>
+
+  <br>
+  <ion-label position="fixed">Pista: </ion-label>
+  <ion-label position="fixed">{{mensagem}}</ion-label>
+
+  <ion-button (click)="adivinharNumero()" expand="full">Reiniciar jogo</ion-button>
 </ion-content>
